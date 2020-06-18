@@ -1,6 +1,6 @@
 # FirebaseML-Kit
 A Simple app to showcase different Apis of Firebase Machine Learning
-<br> APIs showcased (all offline)
+<br> Apis Used (all offline)
 - Text Recognition from an Image
 - Barcode Scanning 
 - Image Labeling
