@@ -1,4 +1,4 @@
-package com.pratyush.firebaseml;
+package com.pratyush.firebaseml.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.google.mlkit.nl.smartreply.SmartReplyGenerator;
 import com.google.mlkit.nl.smartreply.SmartReplySuggestion;
 import com.google.mlkit.nl.smartreply.SmartReplySuggestionResult;
 import com.google.mlkit.nl.smartreply.TextMessage;
+import com.pratyush.firebaseml.R;
 
 import java.util.ArrayList;
 import java.util.List;

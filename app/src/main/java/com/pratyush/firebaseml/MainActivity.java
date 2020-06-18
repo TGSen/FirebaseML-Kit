@@ -9,6 +9,7 @@ import android.view.View;
 import com.pratyush.firebaseml.activities.BarCodeScanner;
 import com.pratyush.firebaseml.activities.ImageLabeling;
 import com.pratyush.firebaseml.activities.LanguageIdentification;
+import com.pratyush.firebaseml.activities.SmartReply;
 import com.pratyush.firebaseml.activities.TextRecognition;
 
 public class MainActivity extends AppCompatActivity {
