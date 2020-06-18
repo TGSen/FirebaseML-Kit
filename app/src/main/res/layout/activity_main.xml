@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/Vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karla"
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:text="Vision"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/visionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@id/Vision">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/textRecognition"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#323232"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="30dp"
+                    app:strokeColor="@color/cardview_dark_background"
+                    app:strokeWidth="5dp"
+                    android:layout_height="80dp">
+                    <TextView
+                        android:text="Text Recognition"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/karla"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/barcodeScanner"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#323232"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="30dp"
+                    app:strokeColor="@color/cardview_dark_background"
+                    app:strokeWidth="5dp"
+                    android:layout_height="80dp">
+                    <TextView
+                        android:text="Barcode Scanner"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/karla"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/labelImages"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#323232"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="30dp"
+                    app:strokeColor="@color/cardview_dark_background"
+                    app:strokeWidth="5dp"
+                    android:layout_height="80dp">
+                    <TextView
+                        android:text="Label Images"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/karla"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karla"
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:text="Natural Language"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@id/visionContainer" />
+            <LinearLayout
+                android:id="@+id/lamguageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@id/language">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/identifyLanguage"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#323232"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="30dp"
+                    app:strokeColor="@color/cardview_dark_background"
+                    app:strokeWidth="5dp"
+                    android:layout_height="80dp">
+                    <TextView
+                        android:text="Identify Language"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/karla"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/smartReply"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#323232"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="30dp"
+                    app:strokeColor="@color/cardview_dark_background"
+                    app:strokeWidth="5dp"
+                    android:layout_height="80dp">
+                    <TextView
+                        android:text="Smart Replies"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/karla"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
